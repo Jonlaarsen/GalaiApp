@@ -1,38 +1,232 @@
-.App {
-  text-align: center;
+body {
+  background-image: url('https://media.istockphoto.com/id/1415944087/vector/black-marble-texture-background-used-in-design-for-skin-tile-wallpaper-interiors-backdrop.jpg?s=612x612&w=0&k=20&c=KtkO6bxKiQtegq5n4ylsJKDI-FHQMU8ZPH2GnNbN514=');
+  background-repeat: repeat;
+  color: #effffa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 900;
+}
+html {
+  scroll-behavior: smooth;
+}
+.button-container{
+  margin-top: -10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.button {
+  background-color: #2c2c2c;
+  border-radius: 4px;
+  border-width: 0;
+  cursor: pointer;
+  height: 48px;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 30px;
+  box-shadow: -0.3em 0 0.3em rgb(176, 176, 176);
+  margin-bottom: 3rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  margin-left: 10rem;
+  height: 100vh;
+  background: #272727;
+  color: #effffa;
+  background-image: url('https://media.istockphoto.com/id/1415944087/vector/black-marble-texture-background-used-in-design-for-skin-tile-wallpaper-interiors-backdrop.jpg?s=612x612&w=0&k=20&c=KtkO6bxKiQtegq5n4ylsJKDI-FHQMU8ZPH2GnNbN514=');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p{
+  font-weight: 600;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top{
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  padding-bottom: 20rem;
+}
+.front-img{
+  height: 41rem;
+  box-shadow: -2em 0 1.4em rgba(192, 137, 44, 0.838), -1em 0 1em white;
+  margin-bottom: 2rem;
+  
+}
+.info-etc{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 5rem;
+  gap: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 80%;
+}
+.main-img{
+  height: 41rem;
+  margin-bottom: 5rem;
+}
+.footer-container{
+  display: flex;
+  bottom: 0;
+  background-color: rgba(255, 247, 238, 0.131);
+  justify-content: space-between;
+}
+.info{
+  padding: 20px;
+}
+.info-logo{
+  height: 10rem;
+}
+.menu-container{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  gap: 5rem;
 }
-
-.App-link {
-  color: #61dafb;
+.menu-nav{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  text-transform: uppercase;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.menu-nav > a{
+  text-decoration: none;
+  color: #ffffffcc;
+  font-weight: 900;
+}
+.menu-nav > a:hover{
+  color: #ffcb30cc;
+}
+.about-container{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.back-button{
+  background-color: #2c2c2c8a;
+  border-radius: 4px;
+  border-width: 0;
+  cursor: pointer;
+  height: 2rem;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 1rem;
+  font-weight: 900;
+  position: sticky;
+  bottom: 2rem;
+}
+.back-button:hover, .button:hover{
+  background-color: #ffcb30cc;
+}
+.about-container  >  h3 {
+  text-align: center;
+  width: 50vh;
+  padding-bottom: 5rem;
+  text-shadow: 1px  1px, #272727;
+}
+.image-container{
+  gap: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.image-container > img{
+  width: 50rem;
+}
+.book-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+@media screen and (max-width: 500px) {
+  body{
+    width: 100%;
+    height: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .menu-img > img{
+    width: 80%;
+    height: 80%;
+    margin-left: 2.5rem;
   }
+  .front-img{
+    width: 60%;
+    height: 80%;
+    margin-top: 10rem;
+  }
+  .about-container{
+    height: 80vh;
+  }
+  .about-container > h1{
+    font-size: 18px;
+    color: #ffcb30cc;
+  }
+  .about-container > h3{
+    font-size: 10px;
+    width: 18rem;
+  }
+  .image-container > img{
+    width: 20rem;
+  }
+  
+  p{
+    font-size: 10px;
+  }
+  .info-etc{
+    display: none;
+  }
+  .footer-container{
+    display: flex;
+    position: static;
+    max-height: 7rem;
+    bottom: 0;
+    padding-bottom: 0;
+   
+  }
+  .footer-container > img{
+    height: 5rem;
+  }
+  .info{
+    padding: 0 10px 0 5px;
+  }
+  .book-container{
+    height: 90vh;
+  }
+  .menu-container{
+    width: 100%;
+    height: 100%;
+    
+  }
+  .menu-nav{
+  display: none;
+  }
+  .back-button{
+    display: none;
+  }
+  .button{
+    width: 10rem;
+    font-size: 1rem;
+  }
+  
 }
